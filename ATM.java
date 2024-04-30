@@ -39,14 +39,12 @@ class bankaccount{
 }
 class transaction{
     static void withdraw(){
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in);
             System.out.println("----------------");
             System.out.println("Enter amount to withdraw :");
             int wcash=sc.nextInt();
             if(wcash<=ATM.balance){
                 ATM.balance=ATM.balance-wcash;
-                ATM.history.add(Integer.toString(wcash));
-                ATM.history.add("Withdraw");
                 System.out.println("Amount Rs"+wcash+"/-withdraw successfully");
                 System.out.println("---------------------------");
             }
@@ -54,7 +52,7 @@ class transaction{
                 System.out.println("insufficient balance to withdraw the cash");
                 System.out.println("---------------------------");
             }
-        }
+        
         ATM.prompt();
     }
     static void deposit(){
@@ -70,7 +68,7 @@ class transaction{
         ATM.prompt();
     }
     static void transfer(){
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in);
             System.out.println("Enter the receiving body:");
             @SuppressWarnings("unused")
             String s=sc.nextLine();
@@ -90,7 +88,7 @@ class transaction{
                 System.out.println("insufficient balance to transfer the cash");
                 System.out.println("---------------------------");
             }
-        }
+        
     }
 }
 class check{
