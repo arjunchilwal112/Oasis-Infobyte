@@ -16,3 +16,4 @@ This project provides a complete automated Library by digitizing its each and ev
 1:Admin module: Admin will have complete control over the system. Admin has permissions to update, delete or modify any existing record or make a new entry (books and members).
 2:Users module: The normal users enjoy only limited privileges. They have a view access to the books. They can browse through the categories, search for a particular book, return and issue a book. They are also provided with an email option in case of a query.
 # Oasis-Infobyte-Intern
+# Oasis-Infobyte-Intern
